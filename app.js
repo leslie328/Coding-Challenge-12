@@ -1,5 +1,5 @@
 
-//Task 2: Add event listener for Product Selection
+//Task 2:Configure the JavaScript for Drawing Context
 document.addEventListener(' () => {
     const productSelect = document.getElementById('productSelect');
     const quantityInput = document.getElementById('quantityInput');
@@ -12,3 +12,8 @@ document.addEventListener(' () => {
         productSelect.addEventListener('change', updatePrice);
         quantityInput.addEventListener('input', updatePrice);
 });
+
+//Task 3:Implement Shape Drawing Logic
+document.addEventListener('DOMContentLoaded', () => {
+    const canvas = document.getElementById('drawingCanvas');
+    const ctx = canvas.getContext('2d');
