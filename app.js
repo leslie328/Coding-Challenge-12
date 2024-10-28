@@ -17,3 +17,7 @@ document.addEventListener(' () => {
 document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('drawingCanvas');
     const ctx = canvas.getContext('2d');
+    canvas.addEventListener('mousedown', (event) => {
+        drawing = true;
+        [lastX, lastY] = getMousePosition(event);
+    });
